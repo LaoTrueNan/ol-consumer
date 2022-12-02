@@ -1,10 +1,10 @@
 package org.yu.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.yu.book.service.HelloService;
+import org.yu.user.service.IUserService;
 
 /**
  * @author guo
@@ -15,17 +15,22 @@ import org.yu.book.service.HelloService;
 @RequestMapping("/ol")
 public class IndexController {
 
-    private final HelloService helloService;
+    @DubboReference(version="1.0",check = false )
+    private IUserService service;
 
-    @Autowired
-    public IndexController(HelloService helloService) {
-        this.helloService = helloService;
-    }
+    //    private final HelloService helloService;
+
+//    @Autowired
+//    public IndexController(HelloService helloService) {
+//        this.helloService = helloService;
+//    }
 
 
     @GetMapping("/aaa")
     public String aaaHandler(){
-        return helloService.handler();
+//        return helloService.handler(a);
+//        return service.getOne(a);
+        return String.valueOf(service.disLockTest());
     }
 
     @GetMapping("/bbb")

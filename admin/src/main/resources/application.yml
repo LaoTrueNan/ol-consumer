@@ -35,8 +35,19 @@ spring:
         register: true
         root: /service
         enabled: true
+#  application:
+#    name: /ol-consumer
+
+dubbo:
   application:
-    name: /ol-consumer
+
+    name: ol-consumer
+    logger: slf4j
+
+  registry:
+    address: zookeeper://192.168.168.184:2181
+    timeout: 30000
+
 
 mybatis:
     mapperLocations: classpath:mapper/**/*Mapper.xml
@@ -46,3 +57,4 @@ logging:
   level:
     org.yu: debug
     org.springframework: warn
+    org.apache.dubbo: warn

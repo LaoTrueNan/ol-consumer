@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
-    <property name="log.pattern" value="%d{HH:mm:ss.SSS} [%t] %highlight(%-5p) %boldGreen(%c{30}) -  %boldMagenta([%M,%L]) - %boldRed(%m%n)" />
+    <property name="log.pattern" value="%d{HH:mm:ss.SSS} [%t] %highlight(%-5p) %boldGreen(%c) -  %boldMagenta([%M,%L]) - %boldRed(%.-150m%n)" />
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>

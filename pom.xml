@@ -12,6 +12,7 @@
         <module>book</module>
         <module>admin</module>
         <module>common</module>
+        <module>user</module>
     </modules>
 
     <properties>
@@ -25,6 +26,7 @@
         <commons.io.version>2.11.0</commons.io.version>
         <commons.fileupload.version>1.4</commons.fileupload.version>
         <commons.collections.version>3.2.2</commons.collections.version>
+        <dubbo.version>3.0.4</dubbo.version>
     </properties>
 
     <dependencyManagement>
@@ -95,6 +97,24 @@
 
             <!-- Token生成与解析-->
 
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-dependencies-zookeeper</artifactId>
+                <version>${dubbo.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
+                <type>pom</type>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
