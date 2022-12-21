@@ -16,7 +16,6 @@ import org.yu.book.service.HelloService;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableDubbo
-//@EnableFeignClients(clients = HelloService.class)
 public class Runner {
     public static void main(String[] args) {
         SpringApplication.run(Runner.class,args);
