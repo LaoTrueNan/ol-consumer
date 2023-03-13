@@ -9,7 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2faa754-c7bd-4c5b-b913-d51d198712f8" name="Default Changelist" comment="feat(Service): 新增dubbo" />
+    <list default="true" id="e2faa754-c7bd-4c5b-b913-d51d198712f8" name="Default Changelist" comment="Dec. 21th distributed">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/org/yu/gateway/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/org/yu/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/org/yu/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,10 +40,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="ltn/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +69,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2Hw7tMsGfTrRUft3SCAIDiYAelw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,22 +90,31 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../backups/springsource/spring-framework-5.3.10/libs/spring-beans-5.3.10-sources.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.13570887" />
     <property name="project.structure.side.proportion" value="0.14021352" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaworkspace\ol-consumer\Gateway\src\main\resources" />
       <recent name="D:\ideaworkspace\ol-consumer\admin\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaworkspace\ol-consumer" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.yu.commom.service" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="reimport" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -88,7 +123,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Consumer0">
+  <component name="RunManager" selected="Maven.admin [spring-boot:run]">
     <configuration name="IUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.yu.user.service.IUserService" />
       <module name="user" />
@@ -114,6 +149,31 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="admin [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/admin" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="Consumer0" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="admin" />
@@ -151,15 +211,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Runner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.yu.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.yu.gateway.Runner" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.IndexController" />
       <item itemvalue="Application.IUserService" />
+      <item itemvalue="Maven.admin [spring-boot:run]" />
       <item itemvalue="Spring Boot.Consumer0" />
       <item itemvalue="Spring Boot.Consumer1" />
       <item itemvalue="Spring Boot.Consumer2" />
+      <item itemvalue="Spring Boot.Runner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Runner" />
         <item itemvalue="Application.IUserService" />
         <item itemvalue="Application.IndexController" />
       </list>
@@ -190,7 +266,42 @@
       <workItem from="1671495833105" duration="1615000" />
       <workItem from="1671497560246" duration="119000" />
       <workItem from="1671505364994" duration="9459000" />
-      <workItem from="1671582169417" duration="4516000" />
+      <workItem from="1671582169417" duration="4766000" />
+      <workItem from="1671697849492" duration="2325000" />
+      <workItem from="1671929285894" duration="2924000" />
+      <workItem from="1672273448630" duration="1791000" />
+      <workItem from="1672304265414" duration="123000" />
+      <workItem from="1672380869095" duration="801000" />
+      <workItem from="1672791940437" duration="3808000" />
+      <workItem from="1673225295123" duration="1429000" />
+      <workItem from="1675064637631" duration="2042000" />
+      <workItem from="1675066894964" duration="549000" />
+      <workItem from="1675242411752" duration="779000" />
+      <workItem from="1675297310262" duration="2054000" />
+      <workItem from="1676000667707" duration="2663000" />
+      <workItem from="1676018364847" duration="11000" />
+      <workItem from="1676420696968" duration="3672000" />
+      <workItem from="1676427440512" duration="1208000" />
+      <workItem from="1676523709477" duration="3545000" />
+      <workItem from="1676593694613" duration="3979000" />
+      <workItem from="1676600512932" duration="595000" />
+      <workItem from="1676601747419" duration="2782000" />
+      <workItem from="1676617218519" duration="421000" />
+      <workItem from="1676617929256" duration="44000" />
+      <workItem from="1676617985565" duration="2089000" />
+      <workItem from="1676957528975" duration="1198000" />
+      <workItem from="1677128633560" duration="2703000" />
+      <workItem from="1677214311756" duration="4667000" />
+      <workItem from="1677569657255" duration="3171000" />
+      <workItem from="1677650204680" duration="2792000" />
+      <workItem from="1677802778649" duration="683000" />
+      <workItem from="1677803636102" duration="418000" />
+      <workItem from="1677898403881" duration="4137000" />
+      <workItem from="1678061799601" duration="4889000" />
+      <workItem from="1678072676086" duration="1469000" />
+      <workItem from="1678148272095" duration="1882000" />
+      <workItem from="1678234708358" duration="2654000" />
+      <workItem from="1678242766469" duration="6636000" />
     </task>
     <task id="LOCAL-00001" summary="feat(Service): 新增dubbo">
       <created>1669972529201</created>
@@ -199,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669972529201</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dec. 21th distributed">
+      <created>1671607669694</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671607669694</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +328,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -219,6 +349,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(Service): 新增dubbo" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Service): 新增dubbo" />
+    <MESSAGE value="Dec. 21th distributed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dec. 21th distributed" />
   </component>
 </project>

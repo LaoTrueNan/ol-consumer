@@ -9,9 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="admin" />
         <module name="common" />
+        <module name="mq" />
         <module name="user" />
         <module name="book" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Gateway" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
