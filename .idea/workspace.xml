@@ -9,27 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2faa754-c7bd-4c5b-b913-d51d198712f8" name="Default Changelist" comment="Dec. 21th distributed">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/org/yu/gateway/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mq/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e2faa754-c7bd-4c5b-b913-d51d198712f8" name="Default Changelist" comment="新增kafka依赖">
+      <change afterPath="$PROJECT_DIR$/mq/src/main/java/org/yu/mq/TestCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq/src/main/java/org/yu/mq/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/org/yu/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/org/yu/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,11 +77,11 @@
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../backups/springsource/spring-framework-5.3.10/libs/spring-beans-5.3.10-sources.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13570887" />
     <property name="project.structure.side.proportion" value="0.14021352" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -123,7 +108,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.admin [spring-boot:run]">
+  <component name="RunManager" selected="Application.TestCollection">
     <configuration name="IUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.yu.user.service.IUserService" />
       <module name="user" />
@@ -143,6 +128,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.yu.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCollection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.yu.mq.TestCollection" />
+      <module name="mq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.yu.mq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -227,6 +225,7 @@
     <list>
       <item itemvalue="Application.IndexController" />
       <item itemvalue="Application.IUserService" />
+      <item itemvalue="Application.TestCollection" />
       <item itemvalue="Maven.admin [spring-boot:run]" />
       <item itemvalue="Spring Boot.Consumer0" />
       <item itemvalue="Spring Boot.Consumer1" />
@@ -235,6 +234,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCollection" />
         <item itemvalue="Spring Boot.Runner" />
         <item itemvalue="Application.IUserService" />
         <item itemvalue="Application.IndexController" />
@@ -302,6 +302,11 @@
       <workItem from="1678148272095" duration="1882000" />
       <workItem from="1678234708358" duration="2654000" />
       <workItem from="1678242766469" duration="6636000" />
+      <workItem from="1678670595374" duration="7622000" />
+      <workItem from="1679551675433" duration="689000" />
+      <workItem from="1679985204445" duration="3479000" />
+      <workItem from="1681366579697" duration="1519000" />
+      <workItem from="1685429621196" duration="5914000" />
     </task>
     <task id="LOCAL-00001" summary="feat(Service): 新增dubbo">
       <created>1669972529201</created>
@@ -317,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671607669694</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增kafka依赖">
+      <created>1678670643532</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678670643532</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +362,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(Service): 新增dubbo" />
     <MESSAGE value="Dec. 21th distributed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dec. 21th distributed" />
+    <MESSAGE value="新增kafka依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增kafka依赖" />
   </component>
 </project>

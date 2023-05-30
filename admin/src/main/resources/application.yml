@@ -25,12 +25,12 @@ spring:
 
     bootstrap-servers: 192.168.118.66:9092
   rabbitmq:
-    host: localhost
+    host: 192.168.118.1
     port: 5672
-    username: guest
+    username: gzq
 
     virtual-host: /
-    password: guest
+    password: gzq102938
   mvc:
     static-path-pattern: /static/**
   thymeleaf:
@@ -61,6 +61,8 @@ dubbo:
 
   consumer:
     loadbalance: roundrobin
+    timeout: 30000
+    retries: 0
 
 zookeeper:
   address: 192.168.118.66
@@ -73,3 +75,4 @@ logging:
     org.yu: debug
     org.springframework: warn
     org.apache.dubbo: warn
+    org.apache.zookeeper: warn

@@ -1,0 +1,5 @@
+Application Version: ${zq.version}
+Spring Boot Version: ${spring-boot.version}
+///////////////////////////////////////////
+//             网关学习项目                //
+///////////////////////////////////////////
